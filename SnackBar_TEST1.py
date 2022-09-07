@@ -48,23 +48,24 @@ def order():
                 print("ok")
 
 def much(order):
+    amount = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20.21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]
     a = int(input("how much do you want from -a- \n"))
     adda = 0
-    if a < 40 and a > 0:
+    if a in amount:
         adda = 1.50 * a
     
           
 
     b = int(input("how much do you want from -b- \n"))
     addb = 0
-    if b < 40 and b > 0:
+    if b in amount: 
         addb = 1.50 * b
         
         
     
     c = int(input("how much do you want from -c- \n"))
     addc = 0
-    if c < 40 and c > 0:
+    if c in amount:
         addc = 1.50 * c
         
     
@@ -72,20 +73,9 @@ def much(order):
         
 
 
-    if adda > 0:
-        print("|---French Fries--------|${0}".format(adda))
-    else:
-        print("")
-    
-    if addb > 0:
-        print("|---Frikandel Sausage---|${0}".format(addb))
-    else:
-        print("")
-
-    if addc > 0:
-        print("|--- Qroquette----------|${0}".format(addc))
-    else:
-        print("")
+    print("|---French Fries--------|${0}".format(adda))
+    print("|---Frikandel Sausage---|${0}".format(addb))
+    print("|--- Qroquette----------|${0}".format(addc))
 
 
 
